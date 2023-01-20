@@ -1,13 +1,14 @@
 <?php 
     if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit'])) {
-        $conn = mysqli_connect('localhost', 'root', '', 'D0018E') or die("Connection Failed:" .mysqli_connect_error());
-        if(isset($_POST['name']) && isset($_POST['email']) && isset($_POST['phone'])&& isset($_POST['bgroup']))) {
-            $name = $_POST['name'];
-            $email = $_POST['email'];
-            $phone = $_POST['phone'];
-            $bgroup = $_POST['bgroup'];
+        $conn = mysqli_connect('localhost', 'D0018E', 'D0018E', 'D0018E') or die("Connection Failed:" .mysqli_connect_error());
+        if(isset($_POST['']) && isset($_POST['price']) && isset($_POST['rim']) && isset($_POST['gears']) && isset($_POST['brake']) && isset($_POST['available']))) {
+            $name = $_POST['price'];
+            $email = $_POST['rim'];
+            $phone = $_POST['gears'];
+            $bgroup = $_POST['brake'];
+            $bgroup = $_POST['available'];
 
-            $sql = "INSERT INTO `Bikes` (`name`, `email`, `phone`, `bgroup`) VALUES ('$name', '$email','$phone', '$bgroup')";
+            $sql = "INSERT INTO `Bikes` (`price`, `rim`, `gears`, `brake`, `available`) VALUES ('$price', '$rim','$gears', '$brake', '$available')";
 
             $query = mysqli_query($conn, $sql);
             if($query) {

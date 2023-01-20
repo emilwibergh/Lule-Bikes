@@ -6,9 +6,6 @@
     <body>
         <form action = 'add.php' method ="POST">
 
-            <label for ="user">ID:</label> <br>
-            <input type="text" name="id" id="id" required/> <br> <br>
-
             <label for ="user">price:</label> <br>
             <input type="text" name="email" id="email" required/> <br> <br>
 
