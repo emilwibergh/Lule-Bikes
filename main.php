@@ -7,7 +7,7 @@
         <form action = 'add.php' method ="POST">
 
             <label for ="user">price:</label> <br>
-            <input type="text" name="email" id="email" required/> <br> <br>
+            <input type="text" name="price" id="price" required/> <br> <br>
 
             <label for ="user">rim:</label> <br>
             <input type="text" name="rim" id="rim" required/> <br> <br>
