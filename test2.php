@@ -5,8 +5,8 @@ $first = $_POST['first'];
 $last = $_POST['last'];
 $pass = $_POST['pass'];
 
-$sql = "INSERT INTO users (first, last, pass) VALUES ($first, $last, $pass);";
+$sql = "INSERT INTO users (first, last, pass) VALUES ('Emil', 'Wibergh', 'Stolt');";
 mysqli_query($conn, $sql);
 
-header("Location: test.php?signup=success");
+#header("Location: test.php?signup=success");
 ?>
