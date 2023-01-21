@@ -5,4 +5,6 @@ http://192.168.0.12/lulebikes/main.php
 
 ssh osboxes@192.168.0.12
 
-cd /var/www/html/
+cd /var/www/html/Lulebikes
+
+git pull https://github.com/emilwibergh/Lule-Bikes.git
