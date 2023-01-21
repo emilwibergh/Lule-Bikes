@@ -1,5 +1,5 @@
 <?php
-$mysqli = new mysqli('localhost', 'D0018E', 'D0018E', 'test');
+$conn = mysqli_connect('localhost', 'D0018E', 'D0018E', 'test');
 
 $first = $_POST['first'];
 $last = $_POST['last'];
