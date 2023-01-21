@@ -9,4 +9,5 @@ $sql = "INSERT INTO users (first, last, pass) VALUES ('Emil', 'Wibergh', 'Stolt'
 mysqli_query($conn, $sql);
 
 #header("Location: test.php?signup=success");
+echo 'fu';
 ?>
