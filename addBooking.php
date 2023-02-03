@@ -15,15 +15,15 @@ $sql = "SELECT 1 FROM products where id = $id AND status='available'";
 $result = mysqli_query($conn, $sql);
 if ($result = mysqli_num_rows($result) == 0) {
     header("Location: index.php?booking=failed");
-} 
+} else {
+    // change bike availability to booked
+    $sql = "UPDATE Bikes SET status='booked' WHERE id=$id";
+    mysqli_query($conn, $sql);
 
-// change bike availability to booked
-$sql = "UPDATE Bikes SET status='booked' WHERE id=$id";
-mysqli_query($conn, $sql);
+    // insert booking to bookings database
+    $sql = "INSERT INTO bookings (startDate, endDate, pickupPoint, returnPoint, bookedBy, bikeBooked, returned) VALUES ('$startDate', '$endDate', '$pickupPoint', '$returnPoint', '$bookedBy', '$bikeBooked', '$returned')";
+    mysqli_query($conn, $sql);
 
-// insert booking to bookings database
-$sql = "INSERT INTO bookings (startDate, endDate, pickupPoint, returnPoint, bookedBy, bikeBooked, returned) VALUES ('$startDate', '$endDate', '$pickupPoint', '$returnPoint', '$bookedBy', '$bikeBooked', '$returned')";
-mysqli_query($conn, $sql);
-
-header("Location: index.php?booking=success");
+    header("Location: index.php?booking=success");
+}
 ?>
