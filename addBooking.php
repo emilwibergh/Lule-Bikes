@@ -30,5 +30,4 @@ mysqli_query($conn, $sql);
 $sql = "INSERT INTO bookings (startDate, endDate, pickupPoint, returnPoint, bookedBy, bikeBooked, returned) VALUES ('$startDate', '$endDate', '$pickupPoint', '$returnPoint', '$bookedBy', '$bikeBooked', '$returned')";
 mysqli_query($conn, $sql);
 
-header("Location: index.php?booking=success");
 ?>
