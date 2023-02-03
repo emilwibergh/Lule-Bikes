@@ -14,7 +14,7 @@ $conn = mysqli_connect('localhost', 'D0018E', 'D0018E', 'D0018E');
 		<div class="main">
 			<div class="avbikes">
 			<?php
-			$sql = 'SELECT * FROM bikes WHERE status="available";';
+			$sql = 'SELECT * FROM Bikes WHERE status="available";';
 			$result = mysqli_query($conn, $sql);
 			$resultcheck = mysqli_num_rows($result);
 
