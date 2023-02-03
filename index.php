@@ -1,3 +1,7 @@
+<?php
+include_once 'includes/dbh.inc.php';
+?>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -10,6 +14,23 @@
 		<div class="main">
 			<div class="avbikes">
 			<?php
+			$sql = 'SELECT * FROM bikes WHERE status="available";';
+			$result = mysqli_query($conn, $sql);
+			$resultcheck = mysqli_num_rows($result);
+
+			if ($resultCheck > 0) {
+				while ($row = mysqli_fetch_assoc($result)) {
+
+					echo '<div class="bikeAd" style="background-image: url(BikeAdImages/001.jpg);">';
+					echo '<div class="bikeAdID">#'+$row['id']+'</div>';
+					echo '<div class="bikeAdBar"> </div>';
+					echo '<div class="bikeAdPrice">500 kr</div>';
+					echo '<div class="bikeAdButton">Rent</div>';
+				echo '</div>';
+					
+				}
+			}
+
 				echo '<div class="bikeAd" style="background-image: url(BikeAdImages/001.jpg);">';
 					echo '<div class="bikeAdID">#005</div>';
 					echo '<div class="bikeAdBar"> </div>';
