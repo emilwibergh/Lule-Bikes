@@ -24,6 +24,12 @@ $conn = mysqli_connect('localhost', 'D0018E', 'D0018E', 'D0018E');
                 <input type="date" name="endDate" value="2023-02-04" min="2023-02-04" max="2024-02-02" placeholder="End Date" required/> <br> <br>
 
                 <input type="text" name="pickupPoint"  placeholder="Pickup Point" required/> <br> <br>
+                <label for="submit"></label> <select name="pickupPoint"> <option value="University">University</option>
+                    <option value="University">University</option>
+                    <option value="University">Center</option>
+                    <option value="University">Professorsvagen</option>
+                    <option value="University">Vaderleden</option>
+                </select>
 
                 <input type="text" name="returnPoint"  placeholder="Return Point" required/> <br> <br>
 
