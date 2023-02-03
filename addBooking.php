@@ -11,7 +11,7 @@ $bikeBooked = $_POST['bikeBooked'];
 $returned = $_POST['returned'];
 
 // check if bike is still available
-$sql = "SELECT 1 FROM products where id = $id AND status='available'";
+$sql = "SELECT * FROM products where id = $id AND status='available'";
 $result = mysqli_query($conn, $sql);
 if ($result = mysqli_num_rows($result) == 0) {
     // change bike availability to booked
