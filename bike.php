@@ -8,7 +8,7 @@
 
             <input type="text" name="status" placeholder="Status" value="<?php $_POST['prefilled']?>"/> <br> <br>
 
-            <input type="text" name="price"  placeholder="Price"/> <br> <br>
+            <input type="text" name="price"  placeholder="Price" value="COWBOY"/> <br> <br>
 
             <input type="text" name="rim" placeholder="Rim"/> <br> <br>
 
