@@ -26,6 +26,7 @@ $conn = mysqli_connect('localhost', 'D0018E', 'D0018E', 'D0018E');
 					echo '<div class="bikeAdPrice">'. $row['price'] .' kr</div>';
 
 				echo '<form action = "bookbike.php" method ="POST">';
+				echo '<input type="hidden" name="id"  value="'. $row['id'] .'" readonly/>'
 					echo '<button type="submit" name="submit" class="bikeAdButton">Rent</button>';
 				echo '</form>';
 				echo '</div>';
