@@ -12,7 +12,7 @@ echo $resultcheck;
 
 	while ($row = mysqli_fetch_assoc($result)) {
 
-		echo $row['id'];
+		echo $row['price'];
 					
 	}
 ?>
