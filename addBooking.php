@@ -10,7 +10,7 @@ $bookedBy = $_POST['bookedBy'];
 $bikeBooked = $_POST['bikeBooked'];
 $returned = $_POST['returned'];
 
-$sql = "UPDATE Bikes SET availability='Booked' WHERE id=$id";
+$sql = "UPDATE Bikes SET status='Booked' WHERE id=$id";
 mysqli_query($conn, $sql);
 
 $sql = "INSERT INTO bookings (startDate, endDate, pickupPoint, returnPoint, bookedBy, bikeBooked, returned) VALUES ('$startDate', '$endDate', '$pickupPoint', '$returnPoint', '$bookedBy', '$bikeBooked', '$returned')";
