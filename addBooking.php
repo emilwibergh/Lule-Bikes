@@ -9,7 +9,7 @@ $returnPoint = $_POST['returnPoint'];
 $bookedBy = $_POST['bookedBy'];
 $returned = 0;
 
-$sql = "INSERT INTO bookings (startDate, endDate, pickupPoint, returnPoint, bookedBy) 
-        VALUES ('$startDate', '$endDate', '$pickupPoint', '$returnPoint', '$bookedBy', $returned)";
+$sql = "INSERT INTO bookings (startDate, endDate, pickupPoint, returnPoint, bookedBy, returned) 
+        VALUES ('$startDate', '$endDate', '$pickupPoint', '$returnPoint', '$bookedBy', '$returned')";
 mysqli_query($conn, $sql);
 ?>

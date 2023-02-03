@@ -10,13 +10,13 @@
 
             <input type="text" name="startDate"  placeholder="Start Date"/> <br> <br>
 
-            <input type="text" name="endDate" placeholder="Rim"/> <br> <br>
+            <input type="text" name="endDate" placeholder="End Date"/> <br> <br>
 
-            <input type="text" name="pickupPoint"  placeholder="Gears"/> <br> <br>
+            <input type="text" name="pickupPoint"  placeholder="Pickup Point"/> <br> <br>
 
-            <input type="text" name="returnPoint"  placeholder="Brake"/> <br> <br>
+            <input type="text" name="returnPoint"  placeholder="Return Point"/> <br> <br>
 
-            <input type="text" name="bookedBy"  placeholder="Name"/> <br> <br>
+            <input type="text" name="bookedBy"  placeholder="Booked By"/> <br> <br>
 
             <button type="submit" name="submit">Book Bike</button>
         </form>
