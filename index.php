@@ -15,6 +15,9 @@ $conn = mysqli_connect('localhost', 'D0018E', 'D0018E', 'D0018E');
 			<div class="avbikes">
 			<?php
 
+			$sql = "INSERT INTO Bikes (status, price, rim, gears, brake) VALUES ('available', '300', '2', '1', '1');";
+			mysqli_query($conn, $sql);
+
 			$sql = 'SELECT * FROM bikes WHERE status="available";';
 			$result = mysqli_query($conn, $sql);
 			$resultcheck = mysqli_num_rows($result);
