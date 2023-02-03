@@ -26,18 +26,18 @@ $conn = mysqli_connect('localhost', 'D0018E', 'D0018E', 'D0018E');
                 <label for="submit">Pickup Point</label> <select name="pickupPoint"> <br>
                 <option value="University">University</option>
                     <option value="Center">Center</option>
-                    <option value="Professorsvagen">Professorsvagen</option>
-                    <option value="Vaderleden">Vaderleden</option>
+                    <option value="Professorsvägen">Professorsvägen</option>
+                    <option value="Väderleden">Väderleden</option>
                 </select>
 
                 <label for="submit">Pickup Point</label> <select name="returnPoint">
                     <option value="University">University</option>
                     <option value="Center">Center</option>
-                    <option value="Professorsvagen">Professorsvagen</option>
-                    <option value="Vaderleden">Vaderleden</option>
+                    <option value="Professorsvägen">Professorsvägen</option>
+                    <option value="Väderleden">Väderleden</option>
                 </select>
 
-                <input type="date" name="bikeBooked"  placeholder="Bike Booked" value="2023-02-02" readonly required/> <br> <br>
+                <input type="hidden" name="bikeBooked"  placeholder="Bike Booked" value="2023-02-02" readonly required/> <br> <br>
 
                 <input type="hidden" name="returned"  placeholder="Returned" value="0" readonly required/> <br> <br>
 
