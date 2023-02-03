@@ -12,7 +12,7 @@ $sql = 'SELECT * FROM Bikes WHERE status="available";';
 			if ($resultCheck > 0) {
 				while ($row = mysqli_fetch_assoc($result)) {
 
-					echo $row['id'] . "<br>";
+					echo $row['price'] . "<br>";
 					
 				}
 			}
