@@ -10,9 +10,8 @@ $conn = mysqli_connect('localhost', 'D0018E', 'D0018E', 'D0018E');
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 	</head>
 	<body>
-
+		<div class="navbar">Luleå Bikes</div>
 		<div class="main">
-			<div class="navbar">Luleå Bikes</div>
 			<div class="avbikes">
 			<?php
 			$sql = 'SELECT * FROM Bikes WHERE status="available";';
