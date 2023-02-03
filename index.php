@@ -8,7 +8,12 @@ $conn = mysqli_connect('localhost', 'D0018E', 'D0018E', 'D0018E');
 		<title>Luleå Bikes</title>
 		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-		<style> <?php if ($_GET['booking'] == "success") {echo ".bookSuccess {display: none;}";}; ?> </style>
+		<style>
+		<?php 
+		if ($_GET['booking'] == "success") {
+			echo ".bookSuccess {display: inline;}";
+		}
+		; ?> </style>
 	</head>
 	<body>
 		<div class="navbar">Luleå Bikes</div>
