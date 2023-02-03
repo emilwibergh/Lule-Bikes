@@ -19,6 +19,13 @@
 .mainform {
 	text-align: center;
 }
+.bookSuccess {
+	width: 100%;
+	background-color: green;
+	color: white;
+	font-size: 16px;
+	text-align: center;
+}
 .avbikes {
 	width: 100%;
 	overflow: hidden;
