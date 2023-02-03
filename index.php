@@ -21,6 +21,13 @@ $conn = mysqli_connect('localhost', 'D0018E', 'D0018E', 'D0018E');
 				while ($row = mysqli_fetch_assoc($result)) {
 
 					echo $row['id'] . "<br>";
+
+					echo '<div class="bikeAd" style="background-image: url(BikeAdImages/001.jpg);">';
+					echo '<div class="bikeAdID">#'. $row['id'] .'</div>';
+					echo '<div class="bikeAdBar"> </div>';
+					echo '<div class="bikeAdPrice">'. $row['price'] .' kr</div>';
+					echo '<div class="bikeAdButton">Rent</div>';
+				echo '</div>';
 					
 				}
 
