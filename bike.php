@@ -6,7 +6,7 @@
     <body>
         <form action = 'addBike.php' method ="POST">
 
-            <input type="text" name="status" placeholder="Status"/> <br> <br>
+            <input type="text" name="status" placeholder="Status" value="<?php $_POST['prefilled']?>"/> <br> <br>
 
             <input type="text" name="price"  placeholder="Price"/> <br> <br>
 
