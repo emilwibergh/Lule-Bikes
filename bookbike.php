@@ -16,6 +16,8 @@
 
             <input type="text" name="bookedBy"  placeholder="Booked By"/> <br> <br>
 
+            <input type="text" name="bikeBooked"  placeholder="Bike Booked"/> <br> <br>
+
             <input type="text" name="returned"  placeholder="Returned"/> <br> <br>
 
             <button type="submit" name="submit">Book Bike</button>
