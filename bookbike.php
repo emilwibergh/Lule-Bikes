@@ -12,9 +12,10 @@ $conn = mysqli_connect('localhost', 'D0018E', 'D0018E', 'D0018E');
 	<body>
 		<div class="navbar">Luleå Bikes</div>
 		<div class="main">
+            <h1>Booking of Bike #<?php echo $_POST['id']?></h1>
             <form action = 'addBooking.php' method ="POST">
 
-                <input type="text" name="id"  value="<?php echo $_POST['id']?>" readonly/> <br> <br>
+                <input type="hidden" name="id"  value="<?php echo $_POST['id']?>" readonly/> <br> <br>
 
                 <input type="text" name="startDate"  placeholder="Start Date"/> <br> <br>
 
