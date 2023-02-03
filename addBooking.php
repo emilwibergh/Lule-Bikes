@@ -18,7 +18,7 @@ if ($result = mysqli_num_rows($result) == 0) {
     mysqli_query($conn, $sql);
 
     // insert booking to bookings database
-    $sql = "INSERT INTO bookings (startDate, endDate, pickupPoint, returnPoint, bookedBy, id, returned) VALUES ('$startDate', '$endDate', '$pickupPoint', '$returnPoint', '$bookedBy', '$id', '$returned')";
+    $sql = "INSERT INTO bookings (startDate, endDate, pickupPoint, returnPoint, bookedBy, bikeBooked, returned) VALUES ('$startDate', '$endDate', '$pickupPoint', '$returnPoint', '$bookedBy', '$id', '$returned')";
     mysqli_query($conn, $sql);
 
     header("Location: index.php?booking=success");
