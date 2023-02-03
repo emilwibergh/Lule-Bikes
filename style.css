@@ -21,7 +21,8 @@
 }
 .bookSuccess {
 	width: 100%;
-	background-color: green;
+	height: 30px;
+	background-color: rgb(61, 201, 61);
 	color: white;
 	font-size: 16px;
 	text-align: center;
