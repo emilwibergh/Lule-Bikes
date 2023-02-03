@@ -18,7 +18,7 @@ if ($result = mysqli_num_rows($result) > 0) {
     //$row = mysqli_fetch_array($result);
     //if ($row)
 } else {
-    header("Location: index.php?booking=failed");
+    //header("Location: index.php?booking=failed");
 }
 
 
@@ -30,4 +30,5 @@ mysqli_query($conn, $sql);
 $sql = "INSERT INTO bookings (startDate, endDate, pickupPoint, returnPoint, bookedBy, bikeBooked, returned) VALUES ('$startDate', '$endDate', '$pickupPoint', '$returnPoint', '$bookedBy', '$bikeBooked', '$returned')";
 mysqli_query($conn, $sql);
 
+//header("Location: index.php?booking=success");
 ?>
