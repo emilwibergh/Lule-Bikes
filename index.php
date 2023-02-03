@@ -14,6 +14,10 @@ include_once 'includes/dbh.inc.php';
 		<div class="main">
 			<div class="avbikes">
 			<?php
+
+			$sql = "INSERT INTO Bikes (status, price, rim, gears, brake) VALUES ('available', '300', '2', '1', '1');";
+			mysqli_query($conn, $sql);
+
 			$sql = 'SELECT * FROM bikes WHERE status="available";';
 			$result = mysqli_query($conn, $sql);
 			$resultcheck = mysqli_num_rows($result);
@@ -32,7 +36,7 @@ include_once 'includes/dbh.inc.php';
 			}
 
 				echo '<div class="bikeAd" style="background-image: url(BikeAdImages/001.jpg);">';
-					echo '<div class="bikeAdID">#005</div>';
+					echo '<div class="bikeAdID">#235</div>';
 					echo '<div class="bikeAdBar"> </div>';
 					echo '<div class="bikeAdPrice">500 kr</div>';
 					echo '<div class="bikeAdButton">Rent</div>';
