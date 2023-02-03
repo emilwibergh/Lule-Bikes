@@ -7,7 +7,6 @@ $endDate = $_POST['endDate'];
 $pickupPoint = $_POST['pickupPoint'];
 $returnPoint = $_POST['returnPoint'];
 $bookedBy = $_POST['bookedBy'];
-$bikeBooked = $_POST['bikeBooked'];
 $returned = $_POST['returned'];
 
 // check if bike is still available
@@ -19,7 +18,7 @@ if ($result = mysqli_num_rows($result) == 0) {
     mysqli_query($conn, $sql);
 
     // insert booking to bookings database
-    $sql = "INSERT INTO bookings (startDate, endDate, pickupPoint, returnPoint, bookedBy, bikeBooked, returned) VALUES ('$startDate', '$endDate', '$pickupPoint', '$returnPoint', '$bookedBy', '$bikeBooked', '$returned')";
+    $sql = "INSERT INTO bookings (startDate, endDate, pickupPoint, returnPoint, bookedBy, id, returned) VALUES ('$startDate', '$endDate', '$pickupPoint', '$returnPoint', '$bookedBy', '$id', '$returned')";
     mysqli_query($conn, $sql);
 
     header("Location: index.php?booking=success");

@@ -41,8 +41,6 @@ $conn = mysqli_connect('localhost', 'D0018E', 'D0018E', 'D0018E');
                     <option value="Väderleden">Väderleden</option>
                 </select> <br> <br>
 
-                <input type="hidden" name="bikeBooked"  placeholder="Bike Booked" value="2023-02-02" readonly required/>
-
                 <input type="hidden" name="returned"  placeholder="Returned" value="0" readonly required/>
 
                 <button type="submit" name="submit">Book Bike</button>
