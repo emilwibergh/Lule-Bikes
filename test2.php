@@ -5,7 +5,7 @@ $sql = "INSERT INTO Bikes (status, price, rim, gears, brake) VALUES ('available'
 mysqli_query($conn, $sql);
 
 
-$sql = 'SELECT * FROM Bikes WHERE status="available";';
+$sql = 'SELECT * FROM Bikes';
 			$result = mysqli_query($conn, $sql);
 			$resultcheck = mysqli_num_rows($result);
 
