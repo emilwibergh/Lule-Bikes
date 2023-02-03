@@ -9,6 +9,6 @@ $bookedBy = $_POST['bookedBy'];
 $bikeBooked = $_POST['bikeBooked'];
 $returned = $_POST['returned'];
 
-$sql = "INSERT INTO bookings (startDate, endDate, pickupPoint, returnPoint, bookedBy, bikeBooked, returned) VALUES ('yo', 'yo', 'yo', 'yo', 'yo', 'yo', 'yo')";
+$sql = "INSERT INTO bookings (startDate, endDate, pickupPoint, returnPoint, bookedBy, bikeBooked, returned) VALUES ('$startDate', '$endDate', '$pickupPoint', '$returnPoint', '$bookedBy', '$bikeBooked', '$returned')";
 mysqli_query($conn, $sql);
 ?>
