@@ -12,7 +12,7 @@ $conn = mysqli_connect('localhost', 'D0018E', 'D0018E', 'D0018E');
 	<body>
 		<div class="navbar">Luleå Bikes</div>
 		<div class="mainform">
-            <br><br><br>
+            <br><br>
             <h1>Booking of Bike #<?php echo $_POST['id']?></h1>
             <form action = 'addBooking.php' method ="POST">
 
