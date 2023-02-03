@@ -57,12 +57,6 @@
 					<div class="bikeAdPrice">500 kr</div>
 					<div class="bikeAdButton">Rent</div>
 				</div>
-				<div class="bikeAd" style="background-image: url(BikeAdImages/001.jpg);">
-					<div class="bikeAdID">#001</div>
-					<div class="bikeAdBar"> </div>
-					<div class="bikeAdPrice">500 kr</div>
-					<div class="bikeAdButton">Rent</div>
-				</div>
 			</div>
 		</div>
 	</body>
