@@ -11,7 +11,7 @@
 			<div class="avbikes">
 			<?php
 				echo '<div class="bikeAd" style="background-image: url(BikeAdImages/001.jpg);">';
-					echo '<div class="bikeAdID">#001</div>';
+					echo '<div class="bikeAdID">#005</div>';
 					echo '<div class="bikeAdBar"> </div>';
 					echo '<div class="bikeAdPrice">500 kr</div>';
 					echo '<div class="bikeAdButton">Rent</div>';
