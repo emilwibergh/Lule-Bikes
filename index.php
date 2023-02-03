@@ -12,7 +12,7 @@ $conn = mysqli_connect('localhost', 'D0018E', 'D0018E', 'D0018E');
 	<body>
 		<div class="navbar">Luleå Bikes</div>
 		<div class="main">
-			<div type="hidden" class="bookSuccess">Your booking was Successful!</div>
+			<div display="none" class="bookSuccess">Your booking was Successful!</div>
 			<div class="avbikes">
 			<?php
 			$sql = 'SELECT * FROM Bikes WHERE status="available";';
