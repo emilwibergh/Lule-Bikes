@@ -14,10 +14,6 @@ $conn = mysqli_connect('localhost', 'D0018E', 'D0018E', 'D0018E');
 		<div class="main">
 			<div class="avbikes">
 			<?php
-
-			$sql = "INSERT INTO Bikes (status, price, rim, gears, brake) VALUES ('available', '300', '2', '1', '1');";
-			mysqli_query($conn, $sql);
-
 			$sql = 'SELECT * FROM bikes WHERE status="available";';
 			$result = mysqli_query($conn, $sql);
 			$resultcheck = mysqli_num_rows($result);
@@ -25,12 +21,7 @@ $conn = mysqli_connect('localhost', 'D0018E', 'D0018E', 'D0018E');
 			if ($resultCheck > 0) {
 				while ($row = mysqli_fetch_assoc($result)) {
 
-					echo '<div class="bikeAd" style="background-image: url(BikeAdImages/001.jpg);">';
-					echo '<div class="bikeAdID">#'+$row['id']+'</div>';
-					echo '<div class="bikeAdBar"> </div>';
-					echo '<div class="bikeAdPrice">500 kr</div>';
-					echo '<div class="bikeAdButton">Rent</div>';
-				echo '</div>';
+					echo $row['id'] . "<br>";
 					
 				}
 			}
