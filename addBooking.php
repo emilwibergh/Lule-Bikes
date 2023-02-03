@@ -14,8 +14,6 @@ $returned = $_POST['returned'];
 $sql = "SELECT 1 FROM products where id = $id AND status='available'";
 $result = mysqli_query($conn, $sql);
 if ($result = mysqli_num_rows($result) == 0) {
-    header("Location: index.php?booking=failed");
-} else {
     // change bike availability to booked
     $sql = "UPDATE Bikes SET status='booked' WHERE id=$id";
     mysqli_query($conn, $sql);
@@ -25,5 +23,7 @@ if ($result = mysqli_num_rows($result) == 0) {
     mysqli_query($conn, $sql);
 
     header("Location: index.php?booking=success");
+} else {
+    header("Location: index.php?booking=failed");
 }
 ?>
