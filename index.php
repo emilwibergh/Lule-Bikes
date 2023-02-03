@@ -24,7 +24,10 @@ $conn = mysqli_connect('localhost', 'D0018E', 'D0018E', 'D0018E');
 					echo '<div class="bikeAdID">#'. $row['id'] .'</div>';
 					echo '<div class="bikeAdBar"> </div>';
 					echo '<div class="bikeAdPrice">'. $row['price'] .' kr</div>';
-					echo '<div class="bikeAdButton">Rent</div>';
+
+				echo '<form action = "bookbike.php" method ="POST">';
+					echo '<button type="submit" name="submit" class="bikeAdButton">Rent</button>';
+				echo '</form>';
 				echo '</div>';
 					
 			}

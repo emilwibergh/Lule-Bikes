@@ -6,6 +6,8 @@
     <body>
         <form action = 'addBooking.php' method ="POST">
 
+            <input type="text" name="id"  value="<?php echo $_POST['id']?>" readonly/> <br> <br>
+
             <input type="text" name="startDate"  placeholder="Start Date"/> <br> <br>
 
             <input type="text" name="endDate" placeholder="End Date"/> <br> <br>
