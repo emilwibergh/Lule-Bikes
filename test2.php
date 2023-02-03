@@ -7,7 +7,6 @@ $conn = mysqli_connect('localhost', 'D0018E', 'D0018E', 'D0018E');
 
 $sql = "SELECT * FROM Bikes";
 $result = mysqli_query($conn, $sql);
-echo $result;
 $resultcheck = mysqli_num_rows($result);
 
 if ($resultCheck > 0) {
