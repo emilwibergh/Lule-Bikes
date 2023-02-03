@@ -11,7 +11,7 @@ $conn = mysqli_connect('localhost', 'D0018E', 'D0018E', 'D0018E');
 		<style>
 		<?php 
 		if ($_GET['booking'] == "success") {
-			echo ".bookSuccess {display: inline;}";
+			echo ".bookSuccess {display: block;}";
 		}
 		; ?> </style>
 	</head>
