@@ -18,8 +18,7 @@ $conn = mysqli_connect('localhost', 'D0018E', 'D0018E', 'D0018E');
 			$result = mysqli_query($conn, $sql);
 			$resultcheck = mysqli_num_rows($result);
 
-				while ($row = mysqli_fetch_assoc($result)) {
-
+			while ($row = mysqli_fetch_assoc($result)) {
 
 				echo '<div class="bikeAd" style="background-image: url(BikeAdImages/001.jpg);">';
 					echo '<div class="bikeAdID">#'. $row['id'] .'</div>';
@@ -28,63 +27,8 @@ $conn = mysqli_connect('localhost', 'D0018E', 'D0018E', 'D0018E');
 					echo '<div class="bikeAdButton">Rent</div>';
 				echo '</div>';
 					
-				}
-
-				echo '<div class="bikeAd" style="background-image: url(BikeAdImages/001.jpg);">';
-					echo '<div class="bikeAdID">#235</div>';
-					echo '<div class="bikeAdBar"> </div>';
-					echo '<div class="bikeAdPrice">500 kr</div>';
-					echo '<div class="bikeAdButton">Rent</div>';
-				echo '</div>';
+			}
 			?>
-				<div class="bikeAd" style="background-image: url(BikeAdImages/001.jpg);">
-					<div class="bikeAdID">#001</div>
-					<div class="bikeAdBar"> </div>
-					<div class="bikeAdPrice">500 kr</div>
-					<div class="bikeAdButton">Rent</div>
-				</div>
-				<div class="bikeAd" style="background-image: url(BikeAdImages/002.png);">
-					<div class="bikeAdID">#001</div>
-					<div class="bikeAdBar"> </div>
-					<div class="bikeAdPrice">500 kr</div>
-					<div class="bikeAdButton">Rent</div>
-				</div>
-				<div class="bikeAd" style="background-image: url(BikeAdImages/001.jpg);">
-					<div class="bikeAdID">#001</div>
-					<div class="bikeAdBar"> </div>
-					<div class="bikeAdPrice">500 kr</div>
-					<div class="bikeAdButton">Rent</div>
-				</div>
-				<div class="bikeAd" style="background-image: url(BikeAdImages/001.jpg);">
-					<div class="bikeAdID">#001</div>
-					<div class="bikeAdBar"> </div>
-					<div class="bikeAdPrice">500 kr</div>
-					<div class="bikeAdButton">Rent</div>
-				</div>
-				<div class="bikeAd" style="background-image: url(BikeAdImages/002.png);">
-					<div class="bikeAdID">#001</div>
-					<div class="bikeAdBar"> </div>
-					<div class="bikeAdPrice">500 kr</div>
-					<div class="bikeAdButton">Rent</div>
-				</div>
-				<div class="bikeAd" style="background-image: url(BikeAdImages/001.jpg);">
-					<div class="bikeAdID">#001</div>
-					<div class="bikeAdBar"> </div>
-					<div class="bikeAdPrice">500 kr</div>
-					<div class="bikeAdButton">Rent</div>
-				</div>
-				<div class="bikeAd" style="background-image: url(BikeAdImages/001.jpg);">
-					<div class="bikeAdID">#001</div>
-					<div class="bikeAdBar"> </div>
-					<div class="bikeAdPrice">500 kr</div>
-					<div class="bikeAdButton">Rent</div>
-				</div>
-				<div class="bikeAd" style="background-image: url(BikeAdImages/002.png);">
-					<div class="bikeAdID">#001</div>
-					<div class="bikeAdBar"> </div>
-					<div class="bikeAdPrice">500 kr</div>
-					<div class="bikeAdButton">Rent</div>
-				</div>
 			</div>
 		</div>
 	</body>
