@@ -23,18 +23,18 @@ $conn = mysqli_connect('localhost', 'D0018E', 'D0018E', 'D0018E');
 
                 <input type="date" name="endDate" value="2023-02-04" min="2023-02-04" max="2024-02-02" placeholder="End Date" required/> <br> <br>
 
-                <label for="submit">Pickup Point</label> <select name="pickupPoint">
-                    <option value="University">University</option>
-                    <option value="University">Center</option>
-                    <option value="University">Professorsvagen</option>
-                    <option value="University">Vaderleden</option>
+                <label for="submit">Pickup Point</label> <select name="pickupPoint"> <br>
+                <option value="University">University</option>
+                    <option value="Center">Center</option>
+                    <option value="Professorsvagen">Professorsvagen</option>
+                    <option value="Vaderleden">Vaderleden</option>
                 </select>
 
                 <label for="submit">Pickup Point</label> <select name="returnPoint">
                     <option value="University">University</option>
-                    <option value="University">Center</option>
-                    <option value="University">Professorsvagen</option>
-                    <option value="University">Vaderleden</option>
+                    <option value="Center">Center</option>
+                    <option value="Professorsvagen">Professorsvagen</option>
+                    <option value="Vaderleden">Vaderleden</option>
                 </select>
 
                 <input type="date" name="bikeBooked"  placeholder="Bike Booked" value="2023-02-02" readonly required/> <br> <br>
