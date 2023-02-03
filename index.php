@@ -18,13 +18,11 @@ $conn = mysqli_connect('localhost', 'D0018E', 'D0018E', 'D0018E');
 			$result = mysqli_query($conn, $sql);
 			$resultcheck = mysqli_num_rows($result);
 
-			if ($resultCheck > 0) {
 				while ($row = mysqli_fetch_assoc($result)) {
 
 					echo $row['id'] . "<br>";
 					
 				}
-			}
 
 				echo '<div class="bikeAd" style="background-image: url(BikeAdImages/001.jpg);">';
 					echo '<div class="bikeAdID">#235</div>';
