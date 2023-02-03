@@ -11,9 +11,13 @@ $bikeBooked = $_POST['bikeBooked'];
 $returned = $_POST['returned'];
 
 // check if bike is still available
-$sql = "SELECT * FROM products where id = $id";
+$sql = "SELECT status FROM products where id = $id";
 $result = mysqli_query($conn, $sql);
-if ($result = mysqli_num_rows($result) == 0) {
+echo $result;
+if ($result = mysqli_num_rows($result) > 0) {
+    //$row = mysqli_fetch_array($result);
+    //if ($row)
+} else {
     header("Location: index.php?booking=failed");
 }
 
