@@ -1,5 +1,16 @@
 <?php
-$conn = mysqli_connect('localhost', 'D0018E', 'D0018E', 'D0018E');
+$servername = "lulea-bikes";
+$username = "root";
+$password = "Password123#@!";
+
+// Create connection
+$conn = mysqli_connect($servername, $username, $password);
+
+// Check connection
+if (!$conn) {
+  die("Connection failed: " . mysqli_connect_error());
+}
+echo "Connected successfully";
 ?>
 
 <!DOCTYPE html>

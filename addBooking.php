@@ -1,5 +1,5 @@
 <?php
-$conn = mysqli_connect('localhost', 'D0018E', 'D0018E', 'D0018E');
+$conn = mysqli_connect("lulea-bikes", "root", "Password123#@!");
 
 $id = $_POST['id'];
 $startDate = $_POST['startDate'];
