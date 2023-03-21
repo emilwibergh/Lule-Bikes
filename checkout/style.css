@@ -1,0 +1,99 @@
+/* Reset default styles */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+  }
+  
+  /* Set global styles */
+  body {
+	font-family: Arial, sans-serif;
+	background-color: #f2f2f2;
+	color: #333;
+  }
+  
+  header {
+	background-color: #d80000;
+	color: #fff;
+	text-align: center;
+	padding: 20px;
+  }
+  
+  h1 {
+	font-size: 36px;
+	margin-bottom: 10px;
+  }
+  
+  h2 {
+	font-size: 24px;
+	margin-bottom: 10px;
+  }
+  
+  .cart {
+	margin: 20px;
+  }
+  
+  .cart table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 20px;
+  }
+  
+  .cart th, .cart td {
+	border: 1px solid #ccc;
+	padding: 10px;
+	text-align: center;
+  }
+  
+  .cart th {
+	background-color: #d80000;
+	color: #fff;
+  }
+  
+  .checkout {
+	margin: 20px;
+  }
+  
+  .checkout form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+  }
+  
+  .checkout label {
+	width: 100%;
+	margin-bottom: 10px;
+  }
+  
+  .checkout input, .checkout textarea {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	margin-bottom: 20px;
+  }
+  
+  .checkout input[type="submit"] {
+	background-color: #d80000;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+  }
+  
+  .checkout input[type="submit"]:hover {
+	background-color: #aa0303;
+  }
+  
+  footer {
+	background-color: #d80000;
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+  }

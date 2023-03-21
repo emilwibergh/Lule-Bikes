@@ -1,5 +1,5 @@
 <?php
-$conn = mysqli_connect("lulea-bikes", "root", "Password123#@!");
+$conn = mysqli_connect('localhost', 'root', 'Password123#@!', 'Bike_databas');
 
 $status = $_POST['status'];
 $price = $_POST['price'];

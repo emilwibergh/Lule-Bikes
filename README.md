@@ -8,5 +8,3 @@ ssh osboxes@192.168.0.12
 cd /var/www/html/Lulebikes
 
 git pull https://github.com/emilwibergh/Lule-Bikes.git
-
-130.240.200.113

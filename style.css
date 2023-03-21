@@ -1,12 +1,45 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 * {
 	margin: 0;
 	padding: 0;
 	font-family: Montserrat;
 }
+
+/* Header Styles */
+header {
+	background-color: #d80000;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+nav ul li {
+	margin: 0 10px;
+}
+
+nav ul li a {
+	color: #fff;
+	text-decoration: none;
+}
+
 .navbar {
 	width: 100%;
 	height: 80px;
-	background-color: red;
+	background-color: #d80000;
 	font-size: 36px;
 	padding-top: 35px;
 	color: white;
@@ -41,7 +74,8 @@
 	margin: 50px 50px;
 	overflow: hidden;
 	position: relative;
-	box-shadow: -2px 2px 20px gray;
+	-webkit-box-shadow: -2px 2px 20px gray;
+	        box-shadow: -2px 2px 20px gray;
 }
 .bikeAdID {
 	background-color: gray;
@@ -76,7 +110,11 @@
 	top: 250px;
 }
 .bikeAdButton {
-	background-color: red;
+	background: none;
+	background-color: #d80000;
+	border-style: none;
+	border: none;
+	outline: none;
 	font-size: 20px;
 	color: white;
 	float: left;
@@ -91,5 +129,60 @@
 .bikeAdButton:hover {
 	cursor: pointer;
 	background-color: white;
-	color: red;
+	color: #d80000;
+}
+/* Sha#d80000 button styles */
+.login-button {
+	
+	float: right;
+	margin-left: 2%;
+
+  border: none;
+  border-radius: px;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+.register-button {
+	
+	float: right;
+	margin-left: 2%;
+
+  border: none;
+  border-radius: px;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+/* Login button styles */
+.login-button {
+	background-color: #a10000;
+}
+
+.login-button:hover {
+	background-color: #ee8d96;
+}
+
+/* Register button styles */
+.register-button {
+  background-color: #a10000;
+}
+
+.register-button:hover {
+  background-color: #ee8d96;
 }

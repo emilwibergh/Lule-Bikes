@@ -1,17 +1,12 @@
 <?php
-$servername = "lulea-bikes";
-$username = "root";
-$password = "Password123#@!";
-$db = "namn" ;
+session_start();
+$conn = mysqli_connect('localhost', 'root', 'Password123#@!', 'Bike_databas');
 
-// Create connection
-$conn = mysqli_connect($servername, $username, $password, $db);
-
-// Check connection
-if (!$conn) {
-  die("Connection failed: " . mysqli_connect_error());
+if(isset($_POST['logout'])) {
+	session_unset();
+	session_destroy();
+	header("Location: index.php");
 }
-echo "Connected successfully";
 ?>
 
 <!DOCTYPE html>
@@ -26,14 +21,27 @@ echo "Connected successfully";
 			echo ".bookSuccess {display: block;}";
 		}
 		; ?> </style>
+
 	</head>
 	<body>
+<?php
+	if (!isset($_SESSION['username'])) {
+    echo '<button class="login-button" onclick="window.location.href = \'login/login.html\';">Login</button>';
+	echo '<button class="register-button" onclick="window.location.href = \'registration/register.html\';">Register</button>';
+	}
+	if (isset($_SESSION['username'])) {
+			echo '<form method="post">
+				  <button class="login-button" type="submit" name="logout">Logout</button>
+		  		  </form>';
+			echo '<button class="register-button" onclick="window.location.href = \'dashboard.php\';">' . $_SESSION["username"] . '</button>';
+		}
+?>
 		<div class="navbar">Luleå Bikes</div>
 		<div class="main">
 			<div class="bookSuccess">Your booking was Successful!</div>
 			<div class="avbikes">
 			<?php
-			$sql = 'SELECT * FROM Bikes WHERE status="available";';
+			$sql = 'SELECT * FROM Bikes WHERE status="vacant";';
 			$result = mysqli_query($conn, $sql);
 			$resultcheck = mysqli_num_rows($result);
 
@@ -46,7 +54,9 @@ echo "Connected successfully";
 
 				echo '<form action = "bookbike.php" method ="POST">';
 				echo '<input type="hidden" name="id"  value="' . $row['id'] . '" readonly/>';
+				if (isset($_SESSION['username'])) {
 					echo '<button type="submit" name="submit" class="bikeAdButton">Rent</button>';
+				}
 				echo '</form>';
 				echo '</div>';
 					
@@ -54,5 +64,7 @@ echo "Connected successfully";
 			?>
 			</div>
 		</div>
+
+
 	</body>
 </html>
